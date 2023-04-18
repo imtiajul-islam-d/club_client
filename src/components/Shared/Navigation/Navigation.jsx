@@ -61,6 +61,15 @@ const Navigation = () => {
               Partners / Donors
             </Link>
           </li>
+          <li className="flex">
+            <Link
+              rel="noopener noreferrer"
+              href="#"
+              className="btn-nav"
+            >
+              Login/Register 
+            </Link>
+          </li>
         </ul>
         <button className="flex justify-end p-4 md:hidden">
           <svg

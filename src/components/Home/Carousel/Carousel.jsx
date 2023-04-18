@@ -20,7 +20,7 @@ const Carousel = () => {
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
+          "--swiper-pagination-color": "red",
         }}
         speed={600}
         parallax={true}
@@ -75,9 +75,9 @@ const Carousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="max-w-7xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
+          <div className="max-w-6xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
             <div
-              className="text-3xl md:text-6xl md:text-center font-bold lg:pt-9"
+              className="text-3xl md:text-6xl lg:text-7xl md:text-center lg:pt-9 font-myriad font-bold"
               data-swiper-parallax="-300"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -86,14 +86,14 @@ const Carousel = () => {
             <div className="flex space-x-3 mt-6 md:mt-10">
               <Link
                 href="/"
-                className="subtitle border hover:text-black hover:bg-white border-white text-white px-3 py-2"
+                className="rounded border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
               </Link>
               <Link
                 href="/"
-                className="subtitle  bg-white text-black hover:bg-transparent border hover:border-white hover:text-white px-3 py-2"
+                className="rounded bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
@@ -102,9 +102,9 @@ const Carousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="max-w-7xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
+          <div className="max-w-6xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
             <div
-              className="text-3xl md:text-6xl md:text-center font-bold lg:pt-9"
+              className="text-3xl md:text-6xl lg:text-7xl md:text-center lg:pt-9 font-myriad font-bold"
               data-swiper-parallax="-300"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -113,14 +113,14 @@ const Carousel = () => {
             <div className="flex space-x-3 mt-6 md:mt-10">
               <Link
                 href="/"
-                className="subtitle border hover:text-black hover:bg-white border-white text-white px-3 py-2"
+                className="rounded border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
               </Link>
               <Link
                 href="/"
-                className="subtitle  bg-white text-black hover:bg-transparent border hover:border-white hover:text-white px-3 py-2"
+                className="rounded bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
