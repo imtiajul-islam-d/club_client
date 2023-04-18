@@ -1,5 +1,3 @@
-
-
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -65,3 +63,12 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-nav {
+    @apply flex items-center px-4 -mb-1 hover:text-red-500;
+  }
+  .btn-featured {
+    @apply border px-6 py-3 bg-red-500 text-white hover:bg-white hover:text-black;
+  }
+}

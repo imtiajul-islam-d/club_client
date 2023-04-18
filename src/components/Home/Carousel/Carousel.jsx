@@ -29,7 +29,7 @@ const Carousel = () => {
         }}
         navigation={true}
         modules={[Parallax, Pagination, Navigation]}
-        className="mySwiper relative w-full lg:h-full"
+        className="mySwiper relative w-full h-full"
       >
         <div
           slot="container-start"
@@ -41,14 +41,40 @@ const Carousel = () => {
           data-swiper-parallax="-23%"
         >
           <Image
-            className="w-full h-full brightness-75"
+            className="w-full h-full lg:h-auto brightness-75"
             src={friends}
             alt="Im"
             sizes="100vw"
           />
         </div>
-        <SwiperSlide
-        >
+        <SwiperSlide>
+          <div className="max-w-7xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
+            <div
+              className="text-3xl md:text-6xl md:text-center lg:pt-9 font-semibold"
+              data-swiper-parallax="-300"
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptates, velit?
+            </div>
+            <div className="flex space-x-3 mt-6 md:mt-10">
+              <Link
+                href="/"
+                className="subtitle rounded border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
+                data-swiper-parallax="-200"
+              >
+                Donate
+              </Link>
+              <Link
+                href="/"
+                className="subtitle rounded bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
+                data-swiper-parallax="-200"
+              >
+                Donate
+              </Link>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
           <div className="max-w-7xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
             <div
               className="text-3xl md:text-6xl md:text-center font-bold lg:pt-9"
@@ -75,36 +101,7 @@ const Carousel = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide
-        >
-          <div className="max-w-7xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
-            <div
-              className="text-3xl md:text-6xl md:text-center font-bold lg:pt-9"
-              data-swiper-parallax="-300"
-            >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates, velit?
-            </div>
-            <div className="flex space-x-3 mt-6 md:mt-10">
-              <Link
-                href="/"
-                className="subtitle border hover:text-black hover:bg-white border-white text-white px-3 py-2"
-                data-swiper-parallax="-200"
-              >
-                Donate
-              </Link>
-              <Link
-                href="/"
-                className="subtitle  bg-white text-black hover:bg-transparent border hover:border-white hover:text-white px-3 py-2"
-                data-swiper-parallax="-200"
-              >
-                Donate
-              </Link>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide
-        >
+        <SwiperSlide>
           <div className="max-w-7xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
             <div
               className="text-3xl md:text-6xl md:text-center font-bold lg:pt-9"

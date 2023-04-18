@@ -2,6 +2,7 @@ import { store } from "@/app/store";
 import Layout from "@/components/Layouts/MainLayout/MainLayout";
 import Loading from "@/components/Loading/Loading";
 import "@/styles/globals.css";
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { Suspense, useEffect } from "react";
 import { Provider } from "react-redux";
@@ -15,10 +16,20 @@ export default function App({ Component, pageProps }) {
   //   // console.log(b.addEventListener = "lk");
   // });
   return (
-    <Provider store={store}>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
-    </Provider>
+    <>
+      <Head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
+      <Provider store={store}>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Provider>
+    </>
   );
 }

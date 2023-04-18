@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import logo from "../../../../public/assets/images/logo.png"
+import Link from "next/link";
 
 const Navigation = () => {
   return (
@@ -16,40 +17,49 @@ const Navigation = () => {
         </a>
         <ul className="items-stretch hidden space-x-3 md:flex">
           <li className="flex">
-            <a
+            <Link
               rel="noopener noreferrer"
               href="#"
-              className="flex items-center px-4 -mb-1"
+              className="btn-nav"
             >
-              Link
-            </a>
+              About BSCA
+            </Link>
           </li>
           <li className="flex">
-            <a
+            <Link
               rel="noopener noreferrer"
               href="#"
-              className="flex items-center px-4 -mb-1"
+              className="btn-nav"
             >
-              Link
-            </a>
+              Functional Wings
+            </Link>
           </li>
           <li className="flex">
-            <a
+            <Link
               rel="noopener noreferrer"
               href="#"
-              className="flex items-center px-4 -mb-1"
+              className="btn-nav"
             >
-              Link
-            </a>
+              Events
+            </Link>
           </li>
           <li className="flex">
-            <a
+            <Link
               rel="noopener noreferrer"
               href="#"
-              className="flex items-center px-4 -mb-1"
+              className="btn-nav"
             >
-              Link
-            </a>
+              Photo Gallery
+            </Link>
+          </li>
+          <li className="flex">
+            <Link
+              rel="noopener noreferrer"
+              href="#"
+              className="btn-nav"
+            >
+              Partners / Donors
+            </Link>
           </li>
         </ul>
         <button className="flex justify-end p-4 md:hidden">
