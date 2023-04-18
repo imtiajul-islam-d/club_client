@@ -7,7 +7,8 @@ module.exports = {
   ],
   theme: {
     fontFamily: {
-      oswald: "Oswald, sans-serif",
+      myriad: "Myriad Pro Regular, sans-serif",
+      // oswald: "Oswald, sans-serif",
     },
     extend: {
       backgroundImage: {
@@ -16,7 +17,7 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       // fontFamily: {
-      //   inter: ["Myriad", "sans-serif"],
+      //   myriad: ["Myriad Pro Regular", "sans-serif"],
       // }
     },
   },

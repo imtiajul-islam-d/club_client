@@ -4,12 +4,12 @@ import React from "react";
 const Featured = () => {
   return (
     <section className="px-6">
-      <section className="max-w-7xl py-6 mx-auto flex items-center justify-between mt-6">
+      <section className="max-w-6xl py-6 mx-auto flex items-center justify-between mt-6">
         <h3 className="text-3xl md:text-4xl font-bold">FEATURED NEWS</h3>
         <Link className="btn-featured" href="/">See all</Link>
       </section>
       <section className="">
-        <div className="container max-w-7xl  mx-auto space-y-6 sm:space-y-12 ">
+        <div className="container max-w-6xl  mx-auto space-y-6 sm:space-y-12 ">
           <a
             rel="noopener noreferrer"
             href="#"

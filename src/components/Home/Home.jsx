@@ -4,7 +4,7 @@ import Featured from "./Featured/Featured";
 
 const Home = () => {
   return (
-    <section className="md:-mt-24 ">
+    <section className="md:-mt-24 font-myriad">
       <section className="">
         <Carousel />
         <Featured />

@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <header className="p-4 bg-gray-50 relative z-30">
-      <div className="container flex justify-between h-10 md:h-16 mx-auto max-w-7xl">
+    <header className="p-4 bg-gray-50 relative z-30 font-myriad">
+      <div className="container flex justify-between h-10 md:h-16 mx-auto max-w-6xl">
         <a
           rel="noopener noreferrer"
           href="#"
