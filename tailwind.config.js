@@ -9,7 +9,8 @@ module.exports = {
     fontFamily: {
       myriad: "Myriad Pro Regular, sans-serif",
       oswald: "Oswald, sans-serif",
-      rubik: "Rubik, sans-serif"
+      rubik: "Rubik, sans-serif",
+      roboto: "Roboto, sans-serif",
     },
     extend: {
       backgroundImage: {

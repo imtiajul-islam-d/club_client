@@ -51,35 +51,48 @@ body {
 
 @layer components {
   .btn-nav {
-    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[13.4px] 2xl:text-[15px] uppercase duration-300;
+    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[13.4px] 2xl:text-[16px] uppercase duration-300;
   }
   .btn-li {
-    @apply flex items-center justify-center w-fit
+    @apply flex items-center justify-center w-fit;
   }
   .btn-featured {
     @apply border rounded px-6 py-3 bg-red-500 text-white hover:bg-white hover:text-black duration-300;
   }
-  /* .card-featured {
-    @apply max-w-sm mx-auto group hover:no-underline focus:no-underline shadow-sm hover:shadow-md hover:scale-105 duration-300;
-  } */
+  /* carousel */
+  .slider-content {
+    @apply max-w-6xl px-20 2xl:max-w-7xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full;
+  }
+  .slider-holder {
+    @apply text-3xl md:text-5xl lg:text-7xl 2xl:text-8xl md:text-center lg:pt-9 font-roboto font-semibold tracking-wide;
+  }
+  .slider-content-line {
+    @apply leading-[70px] 2xl:leading-[100px];
+  }
+  .slider-first-button {
+    @apply rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 lg:px-4 2xl:px-9 py-1 lg:py-[.35rem] 2xl:py-3 duration-300;
+  }
+  .slider-second-button {
+    @apply rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 lg:px-4 2xl:px-9 py-1 lg:py-[.35rem] 2xl:py-3 duration-300;
+  }
+  /* featured */
   .card-featured {
-    @apply max-w-sm mx-auto hover:no-underline focus:no-underline shadow-sm hover:shadow-md hover:scale-105 duration-300
+    @apply max-w-sm mx-auto hover:no-underline focus:no-underline shadow-sm hover:shadow-md hover:scale-105 duration-300;
   }
 }
 
 @font-face {
-  font-family: 'Myriad Pro Regular';
+  font-family: "Myriad Pro Regular";
   font-style: normal;
   font-weight: normal;
-  src: local('Myriad Pro Regular'), url('/assets/myriad-pro/MYRIADPRO-REGULAR.woff') format('woff');
-  }
+  src: local("Myriad Pro Regular"),
+    url("/assets/myriad-pro/MYRIADPRO-REGULAR.woff") format("woff");
+}
 
-  @font-face {
-    font-family: 'Myriad Pro Condensed';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Myriad Pro Condensed'), url('/assets/myriad-pro/MYRIADPRO-COND.woff') format('woff');
-    }
-  
-
-  
+@font-face {
+  font-family: "Myriad Pro Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Condensed"),
+    url("/assets/myriad-pro/MYRIADPRO-COND.woff") format("woff");
+}

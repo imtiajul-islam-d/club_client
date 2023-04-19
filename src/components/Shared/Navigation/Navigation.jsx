@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <header className="p-4 bg-gray-50 relative z-30 font-rubik">
+    <header className="p-4 bg-gray-50 relative z-30 font-roboto">
       <div className="container flex justify-between h-10 md:h-16 2xl:h-20 mx-auto max-w-6xl 2xl:max-w-7xl">
         <a
           rel="noopener noreferrer"
