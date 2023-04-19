@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const Navigation = () => {
   return (
-    <header className="p-4 bg-gray-50 relative z-30 font-myriad">
+    <header className="p-4 bg-gray-50 relative z-30 font-rubik">
       <div className="container flex justify-between h-10 md:h-16 mx-auto max-w-6xl">
         <a
           rel="noopener noreferrer"
@@ -13,10 +13,10 @@ const Navigation = () => {
           aria-label="Back to homepage"
           className="flex items-center p-2"
         >
-          <Image className="w-16 md:w-20" src={logo} alt="Logo" sizes="10vw"/>
+          <Image className="w-20" src={logo} alt="Logo" sizes="10vw"/>
         </a>
-        <ul className="items-stretch hidden space-x-3 md:flex">
-          <li className="flex">
+        <ul className="items-stretch hidden space-x-1 md:flex">
+          <li className="btn-li">
             <Link
               rel="noopener noreferrer"
               href="#"
@@ -25,7 +25,7 @@ const Navigation = () => {
               About BSCA
             </Link>
           </li>
-          <li className="flex">
+          <li className="btn-li">
             <Link
               rel="noopener noreferrer"
               href="#"
@@ -34,7 +34,7 @@ const Navigation = () => {
               Functional Wings
             </Link>
           </li>
-          <li className="flex">
+          <li className="btn-li">
             <Link
               rel="noopener noreferrer"
               href="#"
@@ -43,7 +43,7 @@ const Navigation = () => {
               Events
             </Link>
           </li>
-          <li className="flex">
+          <li className="btn-li">
             <Link
               rel="noopener noreferrer"
               href="#"
@@ -52,7 +52,7 @@ const Navigation = () => {
               Photo Gallery
             </Link>
           </li>
-          <li className="flex">
+          <li className="btn-li">
             <Link
               rel="noopener noreferrer"
               href="#"
@@ -61,13 +61,13 @@ const Navigation = () => {
               Partners / Donors
             </Link>
           </li>
-          <li className="flex">
+          <li className="btn-li">
             <Link
               rel="noopener noreferrer"
               href="#"
-              className="btn-nav"
+              className="btn-nav border px-4 py-3"
             >
-              Login/Register 
+              Login
             </Link>
           </li>
         </ul>

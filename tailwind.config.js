@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     fontFamily: {
       myriad: "Myriad Pro Regular, sans-serif",
-      // oswald: "Oswald, sans-serif",
+      oswald: "Oswald, sans-serif",
+      rubik: "Rubik, sans-serif"
     },
     extend: {
       backgroundImage: {

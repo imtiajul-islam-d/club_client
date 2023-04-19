@@ -51,7 +51,10 @@ body {
 
 @layer components {
   .btn-nav {
-    @apply flex items-center px-4 -mb-1 hover:text-red-500;
+    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500 text-[15px] uppercase;
+  }
+  .btn-li {
+    @apply flex items-center justify-center w-fit
   }
   .btn-featured {
     @apply border rounded px-6 py-3 bg-red-500 text-white hover:bg-white hover:text-black;
@@ -64,6 +67,13 @@ body {
   font-weight: normal;
   src: local('Myriad Pro Regular'), url('/assets/myriad-pro/MYRIADPRO-REGULAR.woff') format('woff');
   }
+
+  @font-face {
+    font-family: 'Myriad Pro Condensed';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Myriad Pro Condensed'), url('/assets/myriad-pro/MYRIADPRO-COND.woff') format('woff');
+    }
   
 
   

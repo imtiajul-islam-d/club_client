@@ -20,7 +20,7 @@ const Carousel = () => {
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "red",
+          "--swiper-pagination-color": "#fff",
         }}
         speed={600}
         parallax={true}
@@ -41,7 +41,7 @@ const Carousel = () => {
           data-swiper-parallax="-23%"
         >
           <Image
-            className="w-full h-full lg:h-auto brightness-75"
+            className="w-full h-full lg:h-auto brightness-[.4]"
             src={friends}
             alt="Im"
             sizes="100vw"
@@ -50,23 +50,24 @@ const Carousel = () => {
         <SwiperSlide>
           <div className="max-w-6xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
             <div
-              className="text-3xl md:text-6xl lg:text-7xl md:text-center lg:pt-9 font-myriad font-bold"
+              className="text-3xl md:text-5xl lg:text-5xl md:text-center lg:pt-9 font-rubik font-semibold tracking-wide"
               data-swiper-parallax="-300"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates, velit?
+              <p className="leading-[57px]">
+                Not all classroom have four walls
+              </p>
             </div>
-            <div className="flex space-x-3 mt-6 md:mt-10">
+            <div className="flex space-x-3 mt-2 md:mt-6">
               <Link
                 href="/"
-                className="rounded border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
+                className="rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
               </Link>
               <Link
                 href="/"
-                className="rounded bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
+                className="rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
@@ -77,23 +78,24 @@ const Carousel = () => {
         <SwiperSlide>
           <div className="max-w-6xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
             <div
-              className="text-3xl md:text-6xl lg:text-7xl md:text-center lg:pt-9 font-myriad font-bold"
+              className="text-3xl md:text-5xl lg:text-5xl md:text-center lg:pt-9 font-rubik font-semibold tracking-wide"
               data-swiper-parallax="-300"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates, velit?
+              <p className="leading-[57px]">
+                Not all classroom have four walls
+              </p>
             </div>
-            <div className="flex space-x-3 mt-6 md:mt-10">
+            <div className="flex space-x-3 mt-2 md:mt-8">
               <Link
                 href="/"
-                className="rounded border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
+                className="rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
               </Link>
               <Link
                 href="/"
-                className="rounded bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
+                className="rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
@@ -104,23 +106,24 @@ const Carousel = () => {
         <SwiperSlide>
           <div className="max-w-6xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
             <div
-              className="text-3xl md:text-6xl lg:text-7xl md:text-center lg:pt-9 font-myriad font-bold"
+              className="text-3xl md:text-5xl lg:text-5xl md:text-center lg:pt-9 font-rubik font-semibold tracking-wide"
               data-swiper-parallax="-300"
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates, velit?
+              <p className="leading-[57px]">
+                Not all classroom have four walls
+              </p>
             </div>
-            <div className="flex space-x-3 mt-6 md:mt-10">
+            <div className="flex space-x-3 mt-2 md:mt-8">
               <Link
                 href="/"
-                className="rounded border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
+                className="rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
               </Link>
               <Link
                 href="/"
-                className="rounded bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
+                className="rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
                 data-swiper-parallax="-200"
               >
                 Donate
