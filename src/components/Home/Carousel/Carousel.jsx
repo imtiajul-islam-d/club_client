@@ -14,6 +14,7 @@ import { Parallax, Pagination, Navigation } from "swiper";
 import React, { Suspense } from "react";
 import friends from "../../../../public/assets/images/friends.jpg";
 import Link from "next/link";
+import CarouselItem from "./CarouselItem/CarouselItem";
 const Carousel = () => {
   return (
     <section className="md:h-[100svh] relative">
@@ -47,27 +48,29 @@ const Carousel = () => {
             sizes="100vw"
           />
         </div>
+        <CarouselItem/>
         <SwiperSlide>
-          <div className="max-w-6xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
+          <div className="max-w-6xl px-4 2xl:max-w-7xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
             <div
               className="text-3xl md:text-5xl lg:text-5xl md:text-center lg:pt-9 font-rubik font-semibold tracking-wide"
               data-swiper-parallax="-300"
             >
               <p className="leading-[57px]">
                 Not all classroom have four walls
+                Not all classroom have four walls
               </p>
             </div>
-            <div className="flex space-x-3 mt-2 md:mt-6">
+            <div className="flex space-x-3 mt-2 md:mt-5">
               <Link
                 href="/"
-                className="rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
+                className="rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1 duration-300"
                 data-swiper-parallax="-200"
               >
                 Donate
               </Link>
               <Link
                 href="/"
-                className="rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
+                className="rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1 duration-300"
                 data-swiper-parallax="-200"
               >
                 Donate
@@ -76,54 +79,29 @@ const Carousel = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div className="max-w-6xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
+          <div className="max-w-6xl px-4 2xl:max-w-7xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
             <div
               className="text-3xl md:text-5xl lg:text-5xl md:text-center lg:pt-9 font-rubik font-semibold tracking-wide"
               data-swiper-parallax="-300"
             >
               <p className="leading-[57px]">
                 Not all classroom have four walls
-              </p>
-            </div>
-            <div className="flex space-x-3 mt-2 md:mt-8">
-              <Link
-                href="/"
-                className="rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
-                data-swiper-parallax="-200"
-              >
-                Donate
-              </Link>
-              <Link
-                href="/"
-                className="rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
-                data-swiper-parallax="-200"
-              >
-                Donate
-              </Link>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="max-w-6xl mx-auto md:flex md:flex-col md:items-center md:justify-center py-14 h-full">
-            <div
-              className="text-3xl md:text-5xl lg:text-5xl md:text-center lg:pt-9 font-rubik font-semibold tracking-wide"
-              data-swiper-parallax="-300"
-            >
-              <p className="leading-[57px]">
+                Not all classroom have four walls
+                Not all classroom have four walls
                 Not all classroom have four walls
               </p>
             </div>
-            <div className="flex space-x-3 mt-2 md:mt-8">
+            <div className="flex space-x-3 mt-2 md:mt-5">
               <Link
                 href="/"
-                className="rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1"
+                className="rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 py-1 duration-300"
                 data-swiper-parallax="-200"
               >
                 Donate
               </Link>
               <Link
                 href="/"
-                className="rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1"
+                className="rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 py-1 duration-300"
                 data-swiper-parallax="-200"
               >
                 Donate

@@ -51,13 +51,19 @@ body {
 
 @layer components {
   .btn-nav {
-    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500 text-[15px] uppercase;
+    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[13.4px] 2xl:text-[15px] uppercase duration-300;
   }
   .btn-li {
     @apply flex items-center justify-center w-fit
   }
   .btn-featured {
-    @apply border rounded px-6 py-3 bg-red-500 text-white hover:bg-white hover:text-black;
+    @apply border rounded px-6 py-3 bg-red-500 text-white hover:bg-white hover:text-black duration-300;
+  }
+  /* .card-featured {
+    @apply max-w-sm mx-auto group hover:no-underline focus:no-underline shadow-sm hover:shadow-md hover:scale-105 duration-300;
+  } */
+  .card-featured {
+    @apply max-w-sm mx-auto hover:no-underline focus:no-underline shadow-sm hover:shadow-md hover:scale-105 duration-300
   }
 }
 
