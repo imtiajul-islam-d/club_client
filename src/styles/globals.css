@@ -51,13 +51,13 @@ body {
 
 @layer components {
   .btn-nav {
-    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[13.4px] 2xl:text-[16px] uppercase duration-300;
+    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[13.4px] 2xl:text-[16px] duration-300;
   }
   .btn-li {
     @apply flex items-center justify-center w-fit;
   }
   .btn-featured {
-    @apply border rounded px-6 py-3 bg-red-500 text-white hover:bg-white hover:text-black duration-300;
+    @apply border rounded px-6 py-3 2xl:px-7 2xl:py-4 2xl:text-lg bg-red-500 text-white hover:bg-white hover:text-black duration-300;
   }
   /* carousel */
   .slider-content {
@@ -70,14 +70,14 @@ body {
     @apply leading-[70px] 2xl:leading-[100px];
   }
   .slider-first-button {
-    @apply rounded-sm border hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 lg:px-4 2xl:px-9 py-1 lg:py-[.35rem] 2xl:py-3 duration-300;
+    @apply rounded-sm border text-base 2xl:text-lg hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 lg:px-5 2xl:px-9 py-1 lg:py-2 2xl:py-3 duration-300;
   }
   .slider-second-button {
-    @apply rounded-sm bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 lg:px-4 2xl:px-9 py-1 lg:py-[.35rem] 2xl:py-3 duration-300;
+    @apply rounded-sm text-base 2xl:text-lg bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 lg:px-5 2xl:px-9 py-1 lg:py-2 2xl:py-3 duration-300;
   }
   /* featured */
   .card-featured {
-    @apply max-w-sm mx-auto hover:no-underline focus:no-underline shadow-sm hover:shadow-md hover:scale-105 duration-300;
+    @apply mx-auto hover:no-underline focus:no-underline shadow-sm hover:shadow-md hover:scale-105 duration-300;
   }
 }
 

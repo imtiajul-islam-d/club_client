@@ -65,7 +65,7 @@ const Navigation = () => {
             <Link
               rel="noopener noreferrer"
               href="#"
-              className="btn-nav border px-4 py-3 hover:border-red-500 hover:text-white hover:bg-red-500 rounded-sm"
+              className="btn-nav border px-4 py-3 2xl:px-5 2xl:py-4 hover:border-red-500 hover:text-white hover:bg-red-500 rounded-sm"
             >
               Login
             </Link>
