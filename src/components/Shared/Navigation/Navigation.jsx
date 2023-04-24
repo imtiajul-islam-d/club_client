@@ -116,7 +116,7 @@ const Navigation = () => {
   return (
     <section className="p-4 bg-gray-50 relative z-30 font-roboto">
       {/* this section will be hide when full screen and will be visible when mobile size screen comes in */}
-      <div className="h-10 md:h-16 2xl:h-20 flex items-center justify-between container mx-auto px-3 lg:px-9 max-w-6xl 2xl:max-w-7xl">
+      <div className="h-10 md:h-16 2xl:h-20 flex items-center justify-between container mx-auto px-3 lg:px-9 max-w-6xl 2xl:max-w-[1680px]">
         {/* menu left side start */}
         <div>
           <Image className="w-20 2xl:w-24" src={logo} alt="Logo" sizes="10vw" />
@@ -149,7 +149,7 @@ const Navigation = () => {
                     <div className="flex justify-center -z-10">
                       <div className="bg-red-500 rotate-45 w-16 h-16 -mt-5"></div>
                     </div>
-                    <ul className="bg-gray-50 border-2 border-t-white shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
+                    <ul className="bg-gray-50 border-t-2 border-t-red-500 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
                       <Link href="/about#mission">
                         <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
                           Mission
@@ -189,11 +189,11 @@ const Navigation = () => {
                 <div
                   className="hover-menu group-hover:transform group-hover:opacity-100 group-hover:visible group-hover:transition-y-0 left-50 z-50"
                 >
-                  <div className="relative top-0 p-6 bg-white shadow-xl text-red-600">
+                  <div className="relative top-0 p-6 bg-white shadow-xl text-red-500">
                     <div className="flex justify-center -z-10">
                       <div className="bg-red-500 rotate-45 w-16 h-16 -mt-5"></div>
                     </div>
-                    <ul className="bg-gray-50 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
+                    <ul className="bg-gray-50 border-t-2 border-t-red-500 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
                       <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
                         <Link href="/service#marketExpansion">
                           Market Expansion Services
@@ -253,14 +253,14 @@ const Navigation = () => {
                     <div className="flex justify-center -z-10">
                       <div className="bg-red-500 rotate-45 w-16 h-16 -mt-5"></div>
                     </div>
-                    <ul className="bg-gray-50 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
-                      <li className="border p-1 hover:bg-red-700 hover:text-white my-2 text-center">
+                    <ul className="bg-gray-50 border-t-2 border-t-red-500 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
+                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
                         <Link href="/brands">FMCG</Link>
                       </li>
-                      <li className="border p-1 hover:bg-red-700 hover:text-white my-2 text-center">
+                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
                         <Link href="/brands">Food</Link>
                       </li>
-                      <li className="border p-1 hover:bg-red-700 hover:text-white my-2 text-center">
+                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
                         <Link href="/brands">Consumer healthcare</Link>
                       </li>
                     </ul>
@@ -296,8 +296,8 @@ const Navigation = () => {
                   href=""
                   className={
                     currentRoute === "/#contact"
-                      ? "pointer underline btn-nav"
-                      : "pointer btn-nav"
+                      ? "pointer underline btn-nav hover:text-white"
+                      : "pointer btn-nav hover:text-white"
                   }
                 >
                   Login
