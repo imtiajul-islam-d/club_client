@@ -51,7 +51,7 @@ body {
 
 @layer components {
   .btn-nav {
-    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[13.4px] 2xl:text-[16px] duration-300;
+    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[14px] 2xl:text-[18px] duration-300;
   }
   .btn-li {
     @apply flex items-center justify-center w-fit relative  px-1 py-3 cursor-pointer h-full;

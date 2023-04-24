@@ -116,7 +116,7 @@ const Navigation = () => {
   return (
     <section className="p-4 bg-gray-50 relative z-30 font-roboto">
       {/* this section will be hide when full screen and will be visible when mobile size screen comes in */}
-      <div className="h-10 md:h-16 2xl:h-20 flex items-center justify-between container mx-auto px-3 lg:px-9 max-w-6xl 2xl:max-w-[1680px]">
+      <div className="h-16 2xl:h-20 flex items-center justify-between container mx-auto px-3 lg:px-9 max-w-6xl 2xl:max-w-[1680px]">
         {/* menu left side start */}
         <div>
           <Image className="w-20 2xl:w-24" src={logo} alt="Logo" sizes="10vw" />
@@ -127,14 +127,14 @@ const Navigation = () => {
         <div className="">
           {/* visible for only mobile */}
           <div className="lg:hidden">
-            <span className="text-black" type="primary" onClick={showDrawer}>
+            <span className="text-black text-2xl" type="primary" onClick={showDrawer}>
               <AiOutlineMenu></AiOutlineMenu>
             </span>
           </div>
           {/* visible for only mobile end */}
           {/* visible for large device only start */}
           <div className="h-24 2xl:h-28 lg:flex items-center lg:items-center hidden">
-            <ul className="h-full flex items-center space-x-2 md:space-x-4 ">
+            <ul className="h-full flex items-center md:space-x-1 2xl:space-x-4 ">
               <li className="btn-li group">
                 <Link
                   href=""
@@ -291,13 +291,13 @@ const Navigation = () => {
                   Partners / Donors
                 </Link>
               </li>
-              <li className="btn-li relative group py3 cursor-pointer border px-4 py-3 2xl:px-5 2xl:py-4 hover:border-red-500 hover:text-white hover:bg-red-500 rounded-sm">
+              <li className="btn-li relative group cursor-pointer border px-0 py-0  hover:border-gray-50 bg-red-500 text-white hover:text-red-500 hover:bg-white rounded-sm">
                 <Link
-                  href=""
+                  href="/"
                   className={
                     currentRoute === "/#contact"
-                      ? "pointer underline btn-nav hover:text-white"
-                      : "pointer btn-nav hover:text-white"
+                      ? "pointer underline btn-nav hover:text-red-500 h-full"
+                      : "pointer btn-nav hover:text-red-500 h-full px-4 2xl:px-5"
                   }
                 >
                   Login
