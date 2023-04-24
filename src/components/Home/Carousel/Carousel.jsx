@@ -48,7 +48,7 @@ const Carousel = () => {
             sizes="100vw"
           />
         </div>
-        <CarouselItem />
+        {/* <CarouselItem /> */}
         <SwiperSlide>
           <div className="slider-content">
             <div className="slider-holder" data-swiper-parallax="-300">

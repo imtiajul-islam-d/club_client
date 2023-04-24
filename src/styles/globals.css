@@ -54,7 +54,10 @@ body {
     @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[13.4px] 2xl:text-[16px] duration-300;
   }
   .btn-li {
-    @apply flex items-center justify-center w-fit;
+    @apply flex items-center justify-center w-fit relative  px-1 py-3 cursor-pointer h-full;
+  }
+  .hover-menu {
+    @apply absolute md:top-24 2xl:top-28 transition opacity-0 invisible  duration-500 ease-in-out w-96 transform
   }
   .btn-featured {
     @apply border rounded px-6 py-3 2xl:px-7 2xl:py-4 2xl:text-lg bg-red-500 text-white hover:bg-white hover:text-black duration-300;

@@ -14,7 +14,7 @@ const Featured = () => {
           <Link
             rel="noopener noreferrer"
             href="#"
-            className="block max-w-sm gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 hover:shadow-md hover:scale-105 duration-300"
+            className="block gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 hover:shadow-md hover:scale-105 duration-300"
           >
             <img
               src="https://source.unsplash.com/random/480x360"
