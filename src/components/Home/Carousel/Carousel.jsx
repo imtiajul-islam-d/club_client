@@ -17,7 +17,7 @@ import Link from "next/link";
 import CarouselItem from "./CarouselItem/CarouselItem";
 const Carousel = () => {
   return (
-    <section className="md:h-[100svh] relative">
+    <section className="lg:h-[100svh] relative">
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -53,7 +53,7 @@ const Carousel = () => {
           <div className="slider-content">
             <div className="slider-holder" data-swiper-parallax="-300">
               <p className="slider-content-line">
-                Not all classroom have four walls 
+                Not all classroom have four walls
               </p>
             </div>
             <div className="flex space-x-3 mt-2 md:mt-5">
@@ -79,7 +79,7 @@ const Carousel = () => {
             <div className="slider-holder" data-swiper-parallax="-300">
               <p className="slider-content-line">
                 Not all classroom have four walls Not all classroom have four
-                walls
+                walls 
               </p>
             </div>
             <div className="flex space-x-3 mt-2 md:mt-5">
@@ -100,7 +100,7 @@ const Carousel = () => {
             </div>
           </div>
         </SwiperSlide>
-        <SwiperSlide>
+        {/* <SwiperSlide>
           <div className="slider-content">
             <div className="slider-holder" data-swiper-parallax="-300">
               <p className="slider-content-line">
@@ -125,7 +125,7 @@ const Carousel = () => {
               </Link>
             </div>
           </div>
-        </SwiperSlide>
+        </SwiperSlide> */}
       </Swiper>
       {/* content goes here */}
       {/* <div className="md:pt-20">Hello ff</div> */}
