@@ -116,7 +116,7 @@ const Navigation = () => {
   return (
     <section className="p-4 bg-gray-50 relative z-30 font-roboto">
       {/* this section will be hide when full screen and will be visible when mobile size screen comes in */}
-      <div className="h-16 2xl:h-20 flex items-center justify-between container mx-auto px-3 lg:px-9 max-w-6xl 2xl:max-w-[1680px]">
+      <div className="h-14 lg:h-16 2xl:h-20 flex items-center justify-between container mx-auto px-3 lg:px-9 max-w-6xl 2xl:max-w-[1680px]">
         {/* menu left side start */}
         <div>
           <Image className="w-20 2xl:w-24" src={logo} alt="Logo" sizes="10vw" />
@@ -127,7 +127,7 @@ const Navigation = () => {
         <div className="">
           {/* visible for only mobile */}
           <div className="lg:hidden">
-            <span className="text-black text-2xl" type="primary" onClick={showDrawer}>
+            <span className="text-black text-xl" type="primary" onClick={showDrawer}>
               <AiOutlineMenu></AiOutlineMenu>
             </span>
           </div>
