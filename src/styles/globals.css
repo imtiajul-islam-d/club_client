@@ -52,7 +52,7 @@ body {
 
 @layer components {
   .btn-nav {
-    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[14px] 2xl:text-[18px] duration-300;
+    @apply flex items-center px-3 h-fit -mb-1 hover:text-red-500  md:text-[15px] 2xl:text-[18px] duration-300;
   }
   .btn-li {
     @apply flex items-center justify-center w-fit relative  px-1 py-3 cursor-pointer h-full;
@@ -61,7 +61,7 @@ body {
     @apply absolute md:top-24 2xl:top-28 transition opacity-0 invisible  duration-500 ease-in-out w-96 transform
   }
   .btn-featured {
-    @apply border rounded px-3 py-2 md:px-6 md:py-3 2xl:px-7 2xl:py-4 text-xs lg:text-sm 2xl:text-lg bg-red-500 text-white hover:bg-white hover:text-black duration-300;
+    @apply border rounded px-3 py-2 md:px-6 md:py-3 2xl:px-7 2xl:py-4 text-xs lg:text-base 2xl:text-xl bg-red-500 text-white hover:bg-white hover:text-black duration-300;
   }
   /* carousel */
   .slider-content {
@@ -74,14 +74,14 @@ body {
     @apply lg:leading-[70px] 2xl:leading-[100px];
   }
   .slider-first-button {
-    @apply lg:text-sm rounded-sm border text-base 2xl:text-lg hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 lg:px-5 2xl:px-9 py-1 lg:py-2 2xl:py-3 duration-300;
+    @apply rounded-sm border text-xs lg:text-base 2xl:text-xl hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 lg:px-5 2xl:px-9 py-1 lg:py-3 2xl:py-4 duration-300;
   }
   .slider-second-button {
-    @apply lg:text-sm rounded-sm text-base 2xl:text-lg bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 lg:px-5 2xl:px-9 py-1 lg:py-2 2xl:py-3 duration-300;
+    @apply rounded-sm text-xs lg:text-base 2xl:text-xl bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 lg:px-5 2xl:px-9 py-1 lg:py-3 2xl:py-4 duration-300;
   }
   /* featured */
   .card-featured {
-    @apply mx-auto hover:no-underline focus:no-underline shadow-sm hover:shadow-md hover:scale-105 duration-300;
+    @apply mx-auto hover:no-underline focus:no-underline shadow-sm hover:shadow-md duration-300;
   }
 }
 

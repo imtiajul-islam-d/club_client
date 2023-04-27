@@ -99,7 +99,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
-import { AiOutlineMenu, AiTwotoneHome } from "react-icons/ai";
+import { AiOutlineMenu } from "react-icons/ai";
+import { FaAngleDown } from "react-icons/fa";
 import logo from "../../../../public/assets/images/logo.png";
 
 const Navigation = () => {
@@ -127,22 +128,31 @@ const Navigation = () => {
         <div className="">
           {/* visible for only mobile */}
           <div className="lg:hidden">
-            <span className="text-black text-xl" type="primary" onClick={showDrawer}>
+            <span
+              className="text-black text-xl"
+              type="primary"
+              onClick={showDrawer}
+            >
               <AiOutlineMenu></AiOutlineMenu>
             </span>
           </div>
           {/* visible for only mobile end */}
           {/* visible for large device only start */}
           <div className="h-24 2xl:h-28 lg:flex items-center lg:items-center hidden">
-            <ul className="h-full flex items-center md:space-x-1 2xl:space-x-4 ">
+            <ul className="h-full flex items-center 2xl:space-x-4 ">
               <li className="btn-li group">
                 <Link
                   href=""
                   className={
-                    currentRoute === "/about" ? "pointer underline btn-nav" : "pointer btn-nav"
+                    currentRoute === "/about"
+                      ? "pointer underline btn-nav"
+                      : "pointer btn-nav"
                   }
                 >
                   About BSCA
+                  <span className="ml-1">
+                    <FaAngleDown />
+                  </span>
                 </Link>
                 <div className="hover-menu group-hover:transform group-hover:opacity-100 group-hover:visible group-hover:transition-y-0 left-50 z-50">
                   <div className="relative top-0 p-6 bg-white shadow-xl text-red-600">
@@ -150,26 +160,12 @@ const Navigation = () => {
                       <div className="bg-red-500 rotate-45 w-16 h-16 -mt-5"></div>
                     </div>
                     <ul className="bg-gray-50 border-t-2 border-t-red-500 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
-                      <Link href="/about#mission">
-                        <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                          Mission
-                        </li>
-                      </Link>
-                      <Link href="/about#vision">
-                        <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                          Vision
-                        </li>
-                      </Link>
-                      <Link href="/about#coreValues">
-                        <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                          Core Values
-                        </li>
-                      </Link>
-                      <Link href="/about#team">
-                        <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                          Our Team
-                        </li>
-                      </Link>
+                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
+                        <Link href="/service#marketExpansion">demo 1</Link>
+                      </li>
+                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
+                        <Link href="/service#marketConsultancy">demo 2</Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
@@ -185,68 +181,9 @@ const Navigation = () => {
                   }
                 >
                   Functional Wings
-                </Link>
-                <div
-                  className="hover-menu group-hover:transform group-hover:opacity-100 group-hover:visible group-hover:transition-y-0 left-50 z-50"
-                >
-                  <div className="relative top-0 p-6 bg-white shadow-xl text-red-500">
-                    <div className="flex justify-center -z-10">
-                      <div className="bg-red-500 rotate-45 w-16 h-16 -mt-5"></div>
-                    </div>
-                    <ul className="bg-gray-50 border-t-2 border-t-red-500 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
-                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#marketExpansion">
-                          Market Expansion Services
-                        </Link>
-                      </li>
-                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#marketConsultancy">
-                          Market Expansion Consultancy
-                        </Link>
-                      </li>
-                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#gsc">
-                          GTM Strategy Consultancy
-                        </Link>
-                      </li>
-                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#mcpde">
-                          Marketing Communication planning, design and execution
-                        </Link>
-                      </li>
-                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#rcdc">
-                          Retail Chain Development consultancy
-                        </Link>
-                      </li>
-                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#ecbsoc">
-                          E-commerce Business strategy and operational
-                          consultancy
-                        </Link>
-                      </li>
-                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#bcscfi">
-                          Business Consultancy for SME companies in FMCG
-                          industry
-                        </Link>
-                      </li>
-                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#pc">Panel of Consultants</Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </li>
-              {/*  */}
-              <li className="btn-li group">
-                <Link
-                  href=""
-                  className={
-                    currentRoute === "/brands" ? "pointer underline btn-nav" : "pointer btn-nav"
-                  }
-                >
-                  Events
+                  <span className="ml-1">
+                    <FaAngleDown />
+                  </span>
                 </Link>
                 <div className="hover-menu group-hover:transform group-hover:opacity-100 group-hover:visible group-hover:transition-y-0 left-50 z-50">
                   <div className="relative top-0 p-6 bg-white shadow-xl text-red-500">
@@ -255,13 +192,13 @@ const Navigation = () => {
                     </div>
                     <ul className="bg-gray-50 border-t-2 border-t-red-500 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
                       <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/brands">FMCG</Link>
+                        <Link href="/service#marketExpansion">Sports Academy</Link>
                       </li>
                       <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/brands">Food</Link>
+                        <Link href="/service#marketConsultancy">Educational Programs</Link>
                       </li>
                       <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/brands">Consumer healthcare</Link>
+                        <Link href="/service#marketConsultancy">Social Welfare</Link>
                       </li>
                     </ul>
                   </div>
@@ -272,11 +209,52 @@ const Navigation = () => {
                 <Link
                   href=""
                   className={
-                    currentRoute === "/career" ? "pointer underline btn-nav" : "pointer btn-nav"
+                    currentRoute === "/brands"
+                      ? "pointer underline btn-nav"
+                      : "pointer btn-nav"
+                  }
+                >
+                  Events
+                  <span className="ml-1">
+                    <FaAngleDown />
+                  </span>
+                </Link>
+                <div className="hover-menu group-hover:transform group-hover:opacity-100 group-hover:visible group-hover:transition-y-0 left-50 z-50">
+                  <div className="relative top-0 p-6 bg-white shadow-xl text-red-500">
+                    <div className="flex justify-center -z-10">
+                      <div className="bg-red-500 rotate-45 w-16 h-16 -mt-5"></div>
+                    </div>
+                    <ul className="bg-gray-50 border-t-2 border-t-red-500 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
+                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
+                        <Link href="/service#marketExpansion">demo 1</Link>
+                      </li>
+                      <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
+                        <Link href="/service#marketConsultancy">demo 2</Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </li>
+              {/*  */}
+              <li className="btn-li group">
+                <Link
+                  href=""
+                  className={
+                    currentRoute === "/career"
+                      ? "pointer underline btn-nav"
+                      : "pointer btn-nav"
                   }
                 >
                   Photo Gallery
                 </Link>
+                {/* <div className="hover-menu group-hover:transform group-hover:opacity-100 group-hover:visible group-hover:transition-y-0 left-50 z-50 w-full ">
+                  <div className="relative top-0 p-6 bg-white shadow-xl text-red-500 ">
+                    <div className="flex justify-center -z-10">
+                      <div className="bg-red-500 rotate-45 w-16 h-16 -mt-5"></div>
+                    </div>
+                  </div>
+                  <ul className="bg-gray-50 border-t-2 border-t-red-500 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto"></ul>
+                </div> */}
               </li>
               {/*  */}
               <li className="btn-li group">

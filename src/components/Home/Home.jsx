@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Carousel from "./Carousel/Carousel";
 import Featured from "./Featured/Featured";
+import Subscribe from "./Subscribe/Subscribe";
+import Sponsor from "./Sponsor/Sponsor";
 
 const Home = () => {
   return (
@@ -8,6 +10,8 @@ const Home = () => {
       <section className="">
         <Carousel />
         <Featured />
+        <Sponsor/>
+        <Subscribe/>
       </section>
     </section>
   );

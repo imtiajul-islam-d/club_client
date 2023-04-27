@@ -6,7 +6,7 @@ const Featured = () => {
   return (
     <section className="px-6">
       <section className="max-w-6xl 2xl:max-w-7xl py-6 mx-auto flex items-center justify-between lg:mt-6">
-        <h3 className="text-2xl md:text-4xl 2xl:text-5xl font-bold">FEATURED NEWS</h3>
+        <h3 className="text-2xl md:text-4xl lg:text-5xl font-bold">FEATURED NEWS</h3>
         <Link className="btn-featured" href="/">See all</Link>
       </section>
       <section className="">
@@ -14,7 +14,7 @@ const Featured = () => {
           <Link
             rel="noopener noreferrer"
             href="#"
-            className="block gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 hover:shadow-md hover:scale-105 duration-300"
+            className="block gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 hover:shadow-md duration-300 bg-gray-100 rounded-sm"
           >
             <img
               src="https://source.unsplash.com/random/480x360"
@@ -25,8 +25,8 @@ const Featured = () => {
               <h3 className="md:text-3xl text-2xl font-semibold 2xl:text-5xl group-hover:underline group-focus:underline">
                 Noster tincidunt reprimique ad pro
               </h3>
-              <p className="text-xs 2xl:text-sm">February 19, 2021</p>
-              <p className="text-base 2xl:text-xl">
+              <p className="text-xs lg:text-sm 2xl:text-base">February 19, 2021</p>
+              <p className="text-base lg:text-lg 2xl:text-xl">
                 Ei delenit sensibus liberavisse pri. Quod suscipit no nam. Est
                 in graece fuisset, eos affert putent doctus id.
               </p>

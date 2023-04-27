@@ -5,7 +5,7 @@ const Footer = () => {
   const { data, isLoading } = useGetUserQuery();
   console.log(data);
   return (
-    <footer className="px-4 divide-y bg-gray-50 mt-2">
+    <footer className="px-4 divide-y bg-gray-50 text-center md:text-start">
       <div className="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
         <div className="lg:w-1/3">
           <a
@@ -95,7 +95,7 @@ const Footer = () => {
           </div>
           <div className="space-y-3">
             <div className="uppercase dark:text-gray-50">Social media</div>
-            <div className="flex justify-start space-x-3">
+            <div className="flex justify-center md:justify-start space-x-3">
               <a
                 rel="noopener noreferrer"
                 href="#"
