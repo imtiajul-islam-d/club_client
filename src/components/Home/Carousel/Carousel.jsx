@@ -9,13 +9,13 @@ import "swiper/css/navigation";
 // import "./styles.css"
 
 // import required modules
-import { Parallax, Pagination, Navigation } from "swiper";
+import SwiperCore, { Parallax, Pagination, Navigation, Autoplay } from "swiper";
 // swiper end
 import React, { Suspense } from "react";
 import friends from "../../../../public/assets/images/friends.jpg";
 import Link from "next/link";
-import CarouselItem from "./CarouselItem/CarouselItem";
 const Carousel = () => {
+  SwiperCore.use([Autoplay]);
   return (
     <section className="lg:h-[100svh] relative">
       <Swiper
@@ -28,8 +28,12 @@ const Carousel = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
-        modules={[Parallax, Pagination, Navigation]}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: true,
+        }}
+        // navigation={true}
+        modules={[Autoplay, Parallax, Pagination, Navigation]}
         className="mySwiper relative w-full h-full"
       >
         <div
@@ -79,7 +83,7 @@ const Carousel = () => {
             <div className="slider-holder" data-swiper-parallax="-300">
               <p className="slider-content-line">
                 Not all classroom have four walls Not all classroom have four
-                walls 
+                walls
               </p>
             </div>
             <div className="flex space-x-3 mt-2 md:mt-5">

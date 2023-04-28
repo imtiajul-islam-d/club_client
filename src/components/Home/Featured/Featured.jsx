@@ -22,7 +22,7 @@ const Featured = () => {
               className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 "
             />
             <div className="p-6 space-y-2 2xl:space-y-3 lg:col-span-5">
-              <h3 className="md:text-3xl text-2xl font-semibold 2xl:text-5xl group-hover:underline group-focus:underline">
+              <h3 className="text-2xl md:text-3xl 2xl:text-5xl font-semibold group-hover:underline group-focus:underline">
                 Noster tincidunt reprimique ad pro
               </h3>
               <p className="text-xs lg:text-sm 2xl:text-base">February 19, 2021</p>

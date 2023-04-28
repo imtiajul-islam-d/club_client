@@ -32,7 +32,7 @@ body {
   color: #fff;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 40px 60px;
+  padding: 6rem 2rem;
   height: auto !important;
 }
 
@@ -61,23 +61,23 @@ body {
     @apply absolute md:top-24 2xl:top-28 transition opacity-0 invisible  duration-500 ease-in-out w-96 transform
   }
   .btn-featured {
-    @apply border rounded px-3 py-2 md:px-6 md:py-3 2xl:px-7 2xl:py-4 text-xs lg:text-base 2xl:text-xl bg-red-500 text-white hover:bg-white hover:text-black duration-300;
+    @apply border rounded px-4 md:px-6 py-2 2xl:px-7 2xl:py-4 text-sm lg:text-base 2xl:text-xl bg-red-500 text-white hover:bg-white hover:text-black duration-300;
   }
   /* carousel */
   .slider-content {
-    @apply max-w-6xl md:px-20 2xl:max-w-7xl mx-auto flex flex-col md:items-center justify-center md:py-14 h-full;
+    @apply max-w-6xl md:px-20 2xl:max-w-7xl mx-auto flex flex-col items-center justify-center md:py-14 h-full;
   }
   .slider-holder {
-    @apply text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl md:text-center lg:pt-9 font-roboto font-semibold md:tracking-wide md:mt-8 lg:mt-0;
+    @apply text-4xl md:text-5xl lg:text-7xl 2xl:text-8xl text-center lg:pt-9 font-roboto font-semibold md:tracking-wide md:mt-8 lg:mt-0;
   }
   .slider-content-line {
     @apply lg:leading-[70px] 2xl:leading-[100px];
   }
   .slider-first-button {
-    @apply rounded-sm border text-xs lg:text-base 2xl:text-xl hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 lg:px-5 2xl:px-9 py-1 lg:py-3 2xl:py-4 duration-300;
+    @apply rounded-sm border text-sm lg:text-base 2xl:text-xl hover:text-black hover:bg-white border-red-500 bg-red-500 text-white hover:border-white px-3 lg:px-5 2xl:px-9 py-2 2xl:py-4 duration-300;
   }
   .slider-second-button {
-    @apply rounded-sm text-xs lg:text-base 2xl:text-xl bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 lg:px-5 2xl:px-9 py-1 lg:py-3 2xl:py-4 duration-300;
+    @apply rounded-sm text-sm lg:text-base 2xl:text-xl bg-white text-black hover:bg-red-500 border hover:border-red-500 hover:text-white px-3 lg:px-5 2xl:px-9 py-2 2xl:py-4 duration-300;
   }
   /* featured */
   .card-featured {

@@ -5,7 +5,7 @@ const Subscribe = () => {
     <section className="py-14 font-roboto">
       <div className="container max-w-6xl 2xl:max-w-7xl mx-auto flex flex-col justify-center p-4 space-y-8 md:p-10 lg:space-y-0 lg:space-x-12 lg:justify-between lg:flex-row">
         <div className="flex flex-col space-y-4 text-center lg:text-left">
-          <h1 className="text-2xl lg:text-5xl font-bold leading-none">Stay Connected</h1>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-none">Stay Connected</h1>
         </div>
         <div className="flex flex-row items-center self-center justify-center flex-shrink-0 border rounded-sm lg:justify-end">
           <div className="flex flex-row text-sm lg:text-lg">
