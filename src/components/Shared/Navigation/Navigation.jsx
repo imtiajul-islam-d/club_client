@@ -1,106 +1,19 @@
-// import Image from "next/image";
-// import React from "react";
-// import logo from "../../../../public/assets/images/logo.png"
-// import Link from "next/link";
-
-// const Navigation = () => {
-//   return (
-//     <header className="p-4 bg-gray-50 relative z-30 font-roboto">
-//       <div className="container flex justify-between h-10 md:h-16 2xl:h-20 mx-auto max-w-6xl 2xl:max-w-7xl">
-//         <a
-//           rel="noopener noreferrer"
-//           href="#"
-//           aria-label="Back to homepage"
-//           className="flex items-center p-2"
-//         >
-//           <Image className="w-20 2xl:w-24" src={logo} alt="Logo" sizes="10vw"/>
-//         </a>
-//         <ul className="items-stretch hidden space-x-1 md:flex">
-//           <li className="btn-li">
-//             <Link
-//               rel="noopener noreferrer"
-//               href="#"
-//               className="btn-nav"
-//             >
-//               About BSCA
-//             </Link>
-//           </li>
-//           <li className="btn-li">
-//             <Link
-//               rel="noopener noreferrer"
-//               href="#"
-//               className="btn-nav"
-//             >
-//               Functional Wings
-//             </Link>
-//           </li>
-//           <li className="btn-li">
-//             <Link
-//               rel="noopener noreferrer"
-//               href="#"
-//               className="btn-nav"
-//             >
-//               Events
-//             </Link>
-//           </li>
-//           <li className="btn-li">
-//             <Link
-//               rel="noopener noreferrer"
-//               href="#"
-//               className="btn-nav"
-//             >
-//               Photo Gallery
-//             </Link>
-//           </li>
-//           <li className="btn-li">
-//             <Link
-//               rel="noopener noreferrer"
-//               href="#"
-//               className="btn-nav"
-//             >
-//               Partners / Donors
-//             </Link>
-//           </li>
-//           <li className="btn-li">
-//             <Link
-//               rel="noopener noreferrer"
-//               href="#"
-//               className="btn-nav border px-4 py-3 2xl:px-5 2xl:py-4 hover:border-red-500 hover:text-white hover:bg-red-500 rounded-sm"
-//             >
-//               Login
-//             </Link>
-//           </li>
-//         </ul>
-//         <button className="flex justify-end p-4 md:hidden">
-//           <svg
-//             xmlns="http://www.w3.org/2000/svg"
-//             fill="none"
-//             viewBox="0 0 24 24"
-//             stroke="currentColor"
-//             className="w-6 h-6"
-//           >
-//             <path
-//               strokeLinecap="round"
-//               strokeLinejoin="round"
-//               strokeWidth="2"
-//               d="M4 6h16M4 12h16M4 18h16"
-//             ></path>
-//           </svg>
-//         </button>
-//       </div>
-//     </header>
-//   );
-// };
-
-// export default Navigation;
-
 import { Button, Drawer } from "antd";
+import { Collapse, Divider } from "antd";
+const { Panel } = Collapse;
+const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
+import { FaArrowRight } from "react-icons/fa";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
-import { FaAngleDown } from "react-icons/fa";
+import { FaAngleDown, FaHome } from "react-icons/fa";
 import logo from "../../../../public/assets/images/logo.png";
 
 const Navigation = () => {
@@ -192,13 +105,19 @@ const Navigation = () => {
                     </div>
                     <ul className="bg-gray-50 border-t-2 border-t-red-500 shadow-xl absolute left-0 top-0 z-10 cursor-default space-y-2 container mx-auto p-10">
                       <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#marketExpansion">Sports Academy</Link>
+                        <Link href="/service#marketExpansion">
+                          Sports Academy
+                        </Link>
                       </li>
                       <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#marketConsultancy">Educational Programs</Link>
+                        <Link href="/service#marketConsultancy">
+                          Educational Programs
+                        </Link>
                       </li>
                       <li className="text-center p-1 hover:bg-gray-100 hover:text-red-500 mb-2">
-                        <Link href="/service#marketConsultancy">Social Welfare</Link>
+                        <Link href="/service#marketConsultancy">
+                          Social Welfare
+                        </Link>
                       </li>
                     </ul>
                   </div>
@@ -297,45 +216,121 @@ const Navigation = () => {
             onClose={onClose}
             open={open}
           >
-            <div className="md:p-8 lg:flex-row divide-gray-400 h-full">
-              <div className="min-h-[90%] flex justify-center mb-3">
+            <div className="md:p-8 lg:flex-row divide-gray-400 h-full pb-3">
+              <div className="min-h-[90%] flex justify-center ">
                 <div className="w-full flex flex-col items-center justify-between">
-                  <Link
-                    className="shadow-sm hover:bg-red-700 hover:text-white w-full py-2 text-center"
-                    href="/"
-                  >
-                    Home
-                  </Link>
-                  <Link
-                    className="shadow-sm hover:bg-red-700 hover:text-white w-full py-2 text-center"
-                    href="/about"
-                  >
-                    About Roadmap
-                  </Link>
-                  <Link
-                    className="shadow-sm hover:bg-red-700 hover:text-white w-full py-2 text-center"
-                    href="/service"
-                  >
-                    Services
-                  </Link>
-                  <Link
-                    className="shadow-sm hover:bg-red-700 hover:text-white w-full py-2 text-center"
-                    href="/brands"
-                  >
-                    Brands
-                  </Link>
-                  <Link
-                    className="shadow-sm hover:bg-red-700 hover:text-white w-full py-2 text-center"
-                    href="/career"
-                  >
-                    Career{" "}
-                  </Link>
-                  <Link
-                    className="shadow-sm hover:bg-red-700 hover:text-white w-full py-2 text-center"
-                    href="/#contact"
-                  >
-                    Contact
-                  </Link>
+                  <div className="w-full border rounded-sm" onClick={onClose}>
+                    <Link
+                      href="/"
+                      className="w-full flex items-center px-4 py-3 border rounded-sm"
+                    >
+                      <span className="mr-3">
+                        <FaHome />
+                      </span>{" "}
+                      Home
+                    </Link>
+                  </div>
+                  <div className="w-full border rounded-sm" onClick={onClose}>
+                    <Link
+                      href="/"
+                      className="w-full flex items-center px-4 py-3 border rounded-sm"
+                    >
+                      <span className="mr-3">
+                        <FaArrowRight />
+                      </span>{" "}
+                      About BSCA
+                    </Link>
+                  </div>
+                  <Collapse className="w-full rounded-sm">
+                    <Panel header="Functional Wings" key="1">
+                      <div
+                        className="w-full border rounded-sm"
+                        onClick={onClose}
+                      >
+                        <Link
+                          href="/"
+                          className="w-full flex items-center px-4 py-3 border rounded-sm"
+                        >
+                          <span className="mr-3">
+                            <FaArrowRight />
+                          </span>{" "}
+                          Sports Academy
+                        </Link>
+                      </div>
+                      <div
+                        className="w-full border rounded-sm"
+                        onClick={onClose}
+                      >
+                        <Link
+                          href="/"
+                          className="w-full flex items-center px-4 py-3 border rounded-sm"
+                        >
+                          <span className="mr-3">
+                            <FaArrowRight />
+                          </span>{" "}
+                          Educational Programs
+                        </Link>
+                      </div>
+                      <div
+                        className="w-full border rounded-sm"
+                        onClick={onClose}
+                      >
+                        <Link
+                          href="/"
+                          className="w-full flex items-center px-4 py-3 border rounded-sm"
+                        >
+                          <span className="mr-3">
+                            <FaArrowRight />
+                          </span>{" "}
+                          Social Welfare
+                        </Link>
+                      </div>
+                    </Panel>
+                  </Collapse>
+                  <div className="w-full border rounded-sm" onClick={onClose}>
+                    <Link
+                      href="/"
+                      className="w-full flex items-center px-4 py-3 border rounded-sm"
+                    >
+                      <span className="mr-3">
+                        <FaArrowRight />
+                      </span>{" "}
+                      Events
+                    </Link>
+                  </div>
+                  <div className="w-full border rounded-sm" onClick={onClose}>
+                    <Link
+                      href="/"
+                      className="w-full flex items-center px-4 py-3 border rounded-sm"
+                    >
+                      <span className="mr-3">
+                        <FaArrowRight />
+                      </span>{" "}
+                      Photo Gallery
+                    </Link>
+                  </div>
+                  <div className="w-full border rounded-sm" onClick={onClose}>
+                    <Link
+                      href="/"
+                      className="w-full flex items-center px-4 py-3 border rounded-sm"
+                    >
+                      <span className="mr-3">
+                        <FaArrowRight />
+                      </span>{" "}
+                      Partners / Donors
+                    </Link>
+                  </div>
+                  <div className="w-full border rounded-sm" onClick={onClose}>
+                    <Link
+                      href="/"
+                      className="w-full flex items-center px-4 py-3 border rounded-sm"
+                    >
+                      <span className="mr-3">
+                        <FaArrowRight />
+                      </span>{" "}
+                      Login
+                    </Link>
+                  </div>
                 </div>
               </div>
               <div className="flex flex-col justify-center pt-6 lg:pt-0">
