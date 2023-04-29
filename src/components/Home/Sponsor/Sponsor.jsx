@@ -3,7 +3,7 @@ import React from "react";
 
 const Sponsor = () => {
   return (
-    <section className="p-6 bg-gray-50 mt-6">
+    <section className="p-6 bg-gray-100 mt-6">
       <div className="container mx-auto max-w-6xl 2xl:max-w-7xl">
         <span className="block mb-2 text-xs font-medium tracking-widest text-center uppercase">
           Be a part of it
@@ -16,7 +16,7 @@ const Sponsor = () => {
             <div className="flex items-center justify-center text-2xl md:text-3xl font-bold rounded-full">
               Be a sponsor
             </div>
-            <p className=" text-lg text-center">
+            <p className=" text-lg 2xl:text-xl text-center">
               <b>Nulla.</b>Nostrum, corrupti blanditiis. Illum, architecto?
               Nostrum, corrupti blanditiis. Illum, architecto?
             </p>
@@ -28,7 +28,7 @@ const Sponsor = () => {
             <div className="flex items-center justify-center text-2xl md:text-3xl font-bold rounded-full">
               Be a sponsor
             </div>
-            <p className=" text-lg text-center">
+            <p className=" text-lg 2xl:text-xl text-center">
               <b>Nulla.</b>Nostrum, corrupti blanditiis. Illum, architecto?
               Nostrum, corrupti blanditiis. Illum, architecto?
             </p>
@@ -40,7 +40,7 @@ const Sponsor = () => {
             <div className="flex items-center justify-center text-2xl md:text-3xl font-bold rounded-full">
               Be a sponsor
             </div>
-            <p className=" text-lg text-center">
+            <p className="text-lg 2xl:text-xl text-center">
               <b>Nulla.</b>Nostrum, corrupti blanditiis. Illum, architecto?
               Nostrum, corrupti blanditiis. Illum, architecto?
             </p>

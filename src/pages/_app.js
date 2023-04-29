@@ -24,6 +24,7 @@ export default function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Roboto:wght@400;700&family=Rubik:wght@400;500&display=swap"
           rel="stylesheet"
         />
+        <link rel="icon" type="image/png" href="./public/favicon.png"/>
       </Head>
       <Provider store={store}>
         <Layout>

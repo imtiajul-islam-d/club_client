@@ -14,7 +14,7 @@ const Featured = () => {
           <Link
             rel="noopener noreferrer"
             href="#"
-            className="block gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 hover:shadow-md duration-300 bg-gray-100 rounded-sm"
+            className="block gap-3 mx-auto sm:max-w-full group hover:no-underline focus:no-underline lg:grid lg:grid-cols-12 hover:shadow-md duration-300 rounded-sm"
           >
             <img
               src="https://source.unsplash.com/random/480x360"
@@ -22,7 +22,7 @@ const Featured = () => {
               className="object-cover w-full h-64 rounded sm:h-96 lg:col-span-7 "
             />
             <div className="p-6 space-y-2 2xl:space-y-3 lg:col-span-5">
-              <h3 className="text-2xl md:text-3xl 2xl:text-5xl font-semibold group-hover:underline group-focus:underline">
+              <h3 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold group-hover:underline group-focus:underline">
                 Noster tincidunt reprimique ad pro
               </h3>
               <p className="text-xs lg:text-sm 2xl:text-base">February 19, 2021</p>

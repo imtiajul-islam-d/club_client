@@ -104,7 +104,7 @@ const Carousel = () => {
             </div>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide>
+        <SwiperSlide>
           <div className="slider-content">
             <div className="slider-holder" data-swiper-parallax="-300">
               <p className="slider-content-line">
@@ -129,10 +129,8 @@ const Carousel = () => {
               </Link>
             </div>
           </div>
-        </SwiperSlide> */}
+        </SwiperSlide>
       </Swiper>
-      {/* content goes here */}
-      {/* <div className="md:pt-20">Hello ff</div> */}
     </section>
   );
 };

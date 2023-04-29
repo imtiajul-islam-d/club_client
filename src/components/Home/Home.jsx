@@ -3,10 +3,15 @@ import Carousel from "./Carousel/Carousel";
 import Featured from "./Featured/Featured";
 import Subscribe from "./Subscribe/Subscribe";
 import Sponsor from "./Sponsor/Sponsor";
+import Head from "next/head";
 
 const Home = () => {
   return (
-    <section className="md:-mt-24 2xl:-mt-28 font-roboto">
+    <>
+      <Head>
+        <title>BSCA || Home</title>
+      </Head>
+      <section className="md:-mt-24 2xl:-mt-28 font-roboto">
       <section className="">
         <Carousel />
         <Featured />
@@ -14,6 +19,7 @@ const Home = () => {
         <Subscribe/>
       </section>
     </section>
+    </>
   );
 };
 

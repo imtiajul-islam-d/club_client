@@ -8,7 +8,7 @@ const FeaturedItem = () => {
     <Link
       rel="noopener noreferrer"
       href="#"
-      className="card-featured group bg-gray-100 rounded-sm"
+      className="card-featured group rounded-sm"
     >
       <Image
         role="presentation"
@@ -18,7 +18,7 @@ const FeaturedItem = () => {
         alt="Featured"
       />
       <div className="p-6 space-y-2">
-        <h3 className="text-2xl md:text-3xl 2xl:text-5xl font-semibold group-hover:underline group-focus:underline">
+        <h3 className="text-2xl md:text-3xl 2xl:text-4xl font-semibold group-hover:underline group-focus:underline">
           In usu laoreet repudiare legendos
         </h3>
         <span className="text-xs lg:text-sm 2xl:text-base">January 21, 2021</span>
