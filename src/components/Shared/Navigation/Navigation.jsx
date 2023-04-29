@@ -40,11 +40,11 @@ const Navigation = () => {
 
         <div className="">
           {/* visible for only mobile */}
-          <div className="lg:hidden">
+          <div className="lg:hidden"  onClick={showDrawer}>
             <span
               className="text-black text-xl"
               type="primary"
-              onClick={showDrawer}
+             
             >
               <AiOutlineMenu></AiOutlineMenu>
             </span>
