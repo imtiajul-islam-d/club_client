@@ -330,7 +330,7 @@ const Navigation = () => {
                     </div>
                     <div className="w-full border rounded-sm" onClick={onClose}>
                       <Link
-                        href="/"
+                        href="/login"
                         className="w-full flex items-center px-4 py-3 border rounded-sm"
                       >
                         <span className="mr-3">
